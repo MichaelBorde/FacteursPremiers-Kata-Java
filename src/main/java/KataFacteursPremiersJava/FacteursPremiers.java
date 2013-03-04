@@ -5,16 +5,17 @@ import java.util.List;
 import com.google.common.collect.Lists;
 
 public class FacteursPremiers {
+
 	public List<Integer> pour(int nombre) {
-		List résultat = Lists.newArrayList();
+		List facteurs = Lists.newArrayList();
 		for (int i = 2; i <= nombre; ) {
 			if (nombre % i == 0) {
-				résultat.add(i);
+				facteurs.add(i);
 				nombre /= i;
 			} else {
 				i++;
 			}
 		}
-		return résultat;
+		return facteurs;
 	}
 }
