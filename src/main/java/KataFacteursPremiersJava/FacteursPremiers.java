@@ -8,12 +8,9 @@ public class FacteursPremiers {
 
 	public List<Integer> pour(int nombre) {
 		List facteurs = Lists.newArrayList();
-		for (int i = 2; i <= nombre; ) {
-			if (nombre % i == 0) {
+		for (int i = 2; i <= nombre; i++) {
+			for (; nombre % i == 0; nombre /= i) {
 				facteurs.add(i);
-				nombre /= i;
-			} else {
-				i++;
 			}
 		}
 		return facteurs;
