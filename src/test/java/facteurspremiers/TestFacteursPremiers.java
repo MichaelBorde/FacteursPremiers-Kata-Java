@@ -1,4 +1,4 @@
-package KataFacteursPremiersJava;
+package facteurspremiers;
 
 import static org.fest.assertions.Assertions.*;
 

@@ -1,4 +1,4 @@
-package KataFacteursPremiersJava;
+package facteurspremiers;
 
 import java.util.List;
 
